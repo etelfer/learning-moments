@@ -13,3 +13,5 @@ export const createUser = (user) => {
     body: JSON.stringify(user),
   }).then((res) => res.json())
 }
+
+

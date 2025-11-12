@@ -127,3 +127,50 @@ table {
   border-spacing: 0;
 }
 
+/* Import this in your index.js file */
+
+/* 1. Global Reset & Font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* 2. Basic App Layout (assumes <div id="root">) */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 3. Clean up links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 4. Global Container */
+/* You can wrap your <ApplicationViews> or <NavBar> 
+   in a <div className="app-container"> to keep 
+   content from touching the screen edges.
+*/
+.app-container {
+  padding: 1rem 2rem;
+}
+
+/* 5. Header utility */
+.header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
